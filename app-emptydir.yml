@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8s-np-service
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+  selector:
+    app: demo-docker-k8s
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-docker-k8s
+  template:
+    metadata:
+      labels:
+        app: demo-docker-k8s
+    spec:
+      containers:
+      - name: demo-docker-k8s
+        image: pramodpatwa/demo-docker-k8s:1.0.2
+        ports:
+        - containerPort: 8080
+        volumeMounts: 
+        - name: abc 
+          mountPath: /abc        
+      volumes: 
+      - name: abc
+        emptyDir: {} #lifecycle tied to Pod
