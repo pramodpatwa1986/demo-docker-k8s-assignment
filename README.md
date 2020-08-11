@@ -23,11 +23,11 @@ kubectl get all
 
 kubectl get pv mypv-volume
 
-![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/GETPV.PNG)
+![alt text](GetPV.PNG)
 
 kubectl get pvc mypv-claim
 
-![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/GETPV.PNG)
+![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/GetPV.PNG)
 
 Web output
 
