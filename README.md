@@ -1,5 +1,4 @@
 # demo-docker-k8s-assignment
-docker kubernetes case study 
 
 ## Application Description
 Demo app to show stateful behaviour of application.
@@ -16,4 +15,8 @@ Application is exposing hello controller which shows increase of counter value o
 * Another example is cerated with persitent volume, which shows same copy of file is shared b/w pods and hence on each refresh of browser counter value will be increased.
 * Node port is used for exposing service (LB implementation is not able to cover)
 
-## Outputs kubectl get all 
+## Outputs 
+
+kubectl get all 
+
+
