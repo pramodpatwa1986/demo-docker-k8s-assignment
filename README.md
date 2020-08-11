@@ -19,4 +19,7 @@ Application is exposing hello controller which shows increase of counter value o
 
 kubectl get all 
 
+kubectl get pv mypv-volume
+
+kubectl get pvc mypv-claim
 
