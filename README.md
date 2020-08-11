@@ -18,9 +18,17 @@ Application is exposing hello controller which shows increase of counter value o
 ## Outputs 
 
 kubectl get all 
+
 ![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/KUBECTL-ALL.PNG)
 
 kubectl get pv mypv-volume
 
+![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/GETPV.PNG)
+
 kubectl get pvc mypv-claim
 
+![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/GETPV.PNG)
+
+Web output
+
+![alt text](https://github.com/pramodpatwa1986/demo-docker-k8s-assignment/blob/master/WebOutput.PNG)
